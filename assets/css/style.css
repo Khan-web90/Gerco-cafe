@@ -104,15 +104,19 @@ ul { list-style: none; }
     position: relative;
 }
 .preloader-mark {
-    font-family: var(--display);
-    font-size: clamp(48px, 8.5vw, 110px);
+    /* Match the rounded, playful, chunky character of the supplied logo lettering */
+    font-family: 'Lilita One', 'Lilita One', 'Carter One', 'Sigmar One', var(--display), serif;
+    font-size: clamp(56px, 9.5vw, 120px);
     line-height: 1;
     color: var(--cream);
     margin-bottom: 22px;
-    letter-spacing: 0.18em;
-    padding-left: 0.18em; /* visually balance trailing letter-spacing */
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    padding-left: 0.04em;
     animation: pulse-mark 1.6s var(--ease-soft) infinite;
-    text-indent: 0.18em;
+    text-indent: 0.04em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .preloader-divider {
     width: 120px;
