@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#F4EDE2" />
+    <title>Greca Coffee N Pastry — Artisan Coffee & Pastry Trailer · Lakeland, FL</title>
+    <meta name="description" content="Greca Coffee N Pastry — a Mediterranean-inspired artisan coffee and pastry trailer in Lakeland, FL. Lattes, matcha, pistachio tres leches and freshly baked pastries." />
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis Smooth Scroll -->
+    <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="1242x839" href="assets/img/greca-favicon.png" />
+    <link rel="icon" type="image/jpeg" sizes="1242x839" href="assets/img/greca-favicon.jpeg" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/img/greca-favicon.png" />
+</head>
+<body>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-mark">GRECA</div>
+            <div class="preloader-divider"></div>
+            <div class="preloader-text">BREWING THE EXPERIENCE</div>
+        </div>
+    </div>
+
+    <!-- ============ CUSTOM CURSOR ============ -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-text" id="cursorText"></div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo" data-cursor="link">
+                <span class="logo-mark">G</span>
+                <span class="logo-word">Greca</span>
+            </a>
+
+            <nav class="nav-menu" aria-label="Primary">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-cursor="link">Home</a></li>
+                    <li><a href="#menu" class="nav-link" data-cursor="link">Menu</a></li>
+                    <li><a href="#story" class="nav-link" data-cursor="link">About</a></li>
+                    <li><a href="#gallery" class="nav-link" data-cursor="link">Gallery</a></li>
+                    <li><a href="#visit" class="nav-link" data-cursor="link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#visit" class="nav-cta" data-cursor="cta">
+                <span>Visit Greca</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+
+            <button class="nav-burger" id="burger" aria-label="Open menu" data-cursor="cta">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mm-bg"></div>
+        <div class="mm-content">
+            <div class="mm-top">
+                <span class="mm-eyebrow">Navigation</span>
+            </div>
+            <ul class="mm-list">
+                <li><a href="#home" class="mm-link" data-cursor="link"><span>01</span>Home</a></li>
+                <li><a href="#menu" class="mm-link" data-cursor="link"><span>02</span>Menu</a></li>
+                <li><a href="#story" class="mm-link" data-cursor="link"><span>03</span>About</a></li>
+                <li><a href="#gallery" class="mm-link" data-cursor="link"><span>04</span>Gallery</a></li>
+                <li><a href="#visit" class="mm-link" data-cursor="link"><span>05</span>Contact</a></li>
+            </ul>
+            <div class="mm-bottom">
+                <a href="#visit" class="mm-cta" data-cursor="cta">Visit Greca →</a>
+                <div class="mm-meta">
+                    <span>1379 Marcum Rd, Lakeland FL</span>
+                    <span>Tue–Fri 7–3 · Sat 11–6</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ MAIN ============ -->
+    <main id="main">
+
+        <!-- ====================== HERO ====================== -->
+        <section class="hero" id="home">
+            <div class="hero-media">
+                <div class="hero-img" data-parallax="0.18" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2400&q=80')"></div>
+                <div class="hero-grain"></div>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-eyebrow reveal-up">
+                    <span class="eyebrow-dot"></span>
+                    <span>Greca Coffee N Pastry · Lakeland, FL</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="line"><span>Coffee, Pastry</span></span>
+                    <span class="line"><span><em>&amp; Moments</em></span></span>
+                    <span class="line"><span>Worth Savoring.</span></span>
+                </h1>
+
+                <p class="hero-lede reveal-up" data-delay="0.6">
+                    A Mediterranean-inspired artisan trailer pulling up at <strong>Munchies on Marcum</strong> — small batch espresso, single-origin pour-overs, handmade pastries and the city's most talked-about pistachio tres leches.
+                </p>
+
+                <div class="hero-cta reveal-up" data-delay="0.8">
+                    <a href="#menu" class="btn btn-primary magnetic" data-cursor="cta">
+                        <span class="btn-text"><span>Explore Menu</span></span>
+                        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                    </a>
+                    <a href="#visit" class="btn btn-ghost magnetic" data-cursor="cta">
+                        <span class="btn-text"><span>Visit Greca</span></span>
+                        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-side hero-side-left">
+                <span class="vlabel">EST. LAKELAND · FL</span>
+            </div>
+            <div class="hero-side hero-side-right">
+                <a href="https://www.instagram.com/grecacoffeenpastry/" target="_blank" class="vlabel" data-cursor="link">@grecacoffeenpastry ↗</a>
+            </div>
+
+            <a href="#intro" class="hero-scroll" data-cursor="cta">
+                <span>SCROLL TO DISCOVER</span>
+                <span class="scroll-line"></span>
+            </a>
+
+            <div class="hero-marquee" aria-hidden="true">
+                <div class="marquee-track">
+                    <span>Espresso</span><span>·</span>
+                    <span>Pistachio Tres Leches</span><span>·</span>
+                    <span>Matcha Latte</span><span>·</span>
+                    <span>Almond Croissant</span><span>·</span>
+                    <span>Mediterranean Vibes</span><span>·</span>
+                    <span>Hand-Pulled Espresso</span><span>·</span>
+                    <span>Espresso</span><span>·</span>
+                    <span>Pistachio Tres Leches</span><span>·</span>
+                    <span>Matcha Latte</span><span>·</span>
+                    <span>Almond Croissant</span><span>·</span>
+                    <span>Mediterranean Vibes</span><span>·</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== INTRO ====================== -->
+        <section class="intro" id="intro">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <span class="eyebrow reveal-up">— Our Philosophy</span>
+                    <h2 class="display reveal-mask">
+                        <span class="line-mask"><span>Made with care.</span></span>
+                        <span class="line-mask"><span><em>Served with character.</em></span></span>
+                    </h2>
+                    <p class="lede reveal-up" data-delay="0.2">
+                        We are a small, mobile pastry kitchen built on the belief that a great coffee break can change the rhythm of your day. Every cup is pulled by hand. Every pastry is baked the morning of. Nothing mass-produced, nothing rushed.
+                    </p>
+                    <div class="intro-stats">
+                        <div class="stat reveal-up" data-delay="0.3">
+                            <span class="stat-num">★</span>
+                            <span class="stat-label">Florida's most<br/>talked-about trailer</span>
+                        </div>
+                        <div class="stat reveal-up" data-delay="0.4">
+                            <span class="stat-num">04</span>
+                            <span class="stat-label">Days a week<br/>of fresh bakes</span>
+                        </div>
+                        <div class="stat reveal-up" data-delay="0.5">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Hand-crafted<br/>in-house</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro-media">
+                    <div class="intro-img intro-img-1" data-parallax="0.12" style="background-image:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1400&q=80')"></div>
+                    <div class="intro-img intro-img-2" data-parallax="0.22" style="background-image:url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80')"></div>
+                    <div class="intro-tag">
+                        <span class="tag-dot"></span>
+                        Baked fresh · 7am daily
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== SIGNATURE MENU ====================== -->
+        <section class="menu" id="menu">
+            <div class="section-head">
+                <div class="reveal-up">
+                    <span class="eyebrow">— The Signature</span>
+                    <h2 class="display-2">A short menu.<br/>Done <em>exceptionally</em>.</h2>
+                </div>
+                <p class="section-lede reveal-up" data-delay="0.2">
+                    We keep it focused — a tightly edited menu that lets every ingredient shine. Pull up to the window, order at the hatch, and taste why Lakeland can't stop talking about us.
+                </p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <article class="menu-card" data-cursor="view" data-cat="coffee">
+                    <div class="menu-card-media">
+                        <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=80')"></div>
+                        <span class="menu-card-num">01</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-card-cat">Coffee · Signature</span>
+                        <h3 class="menu-card-title">Greca Cortadito</h3>
+                        <p class="menu-card-desc">A Mediterranean-style double espresso, lightly cut with sweet condensed milk. Our namesake serve.</p>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="menu-card menu-card-offset" data-cursor="view" data-cat="pastry">
+                    <div class="menu-card-media">
+                        <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=80')"></div>
+                        <span class="menu-card-num">02</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-card-cat">Pastry · Signature</span>
+                        <h3 class="menu-card-title">Pistachio Tres Leches</h3>
+                        <p class="menu-card-desc">Three-milk sponge soaked overnight, crowned with whipped mascarpone and crushed Bronte pistachios.</p>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="menu-card" data-cursor="view" data-cat="coffee">
+                    <div class="menu-card-media">
+                        <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=1400&q=80')"></div>
+                        <span class="menu-card-num">03</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-card-cat">Coffee · Latte</span>
+                        <h3 class="menu-card-title">Honey Lavender Latte</h3>
+                        <p class="menu-card-desc">Steamed milk, raw wildflower honey, a whisper of dried Provençal lavender, finished with latte art.</p>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="menu-card menu-card-offset" data-cursor="view" data-cat="pastry">
+                    <div class="menu-card-media">
+                        <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1568827999250-3f6afff96e66?auto=format&fit=crop&w=1400&q=80')"></div>
+                        <span class="menu-card-num">04</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-card-cat">Breakfast</span>
+                        <h3 class="menu-card-title">Almond Croissant</h3>
+                        <p class="menu-card-desc">72-hour laminated dough, double-baked with frangipane and toasted Marcona almonds.</p>
+                    </div>
+                </article>
+
+                <!-- Item 5 -->
+                <article class="menu-card" data-cursor="view" data-cat="cake">
+                    <div class="menu-card-media">
+                        <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1400&q=80')"></div>
+                        <span class="menu-card-num">05</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-card-cat">Cake · Daily Bake</span>
+                        <h3 class="menu-card-title">Olive Oil Citrus Cake</h3>
+                        <p class="menu-card-desc">Single-origin olive oil, Sicilian lemon zest, candied orange, finished with sea salt.</p>
+                    </div>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="menu-card menu-card-offset" data-cursor="view" data-cat="matcha">
+                    <div class="menu-card-media">
+                        <div class="menu-card-img" style="background-image:url('https://images.pexels.com/photos/17366787/pexels-photo-17366787.jpeg?auto=compress&w=1400')"></div>
+                        <span class="menu-card-num">06</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-card-cat">Matcha · Speciality</span>
+                        <h3 class="menu-card-title">Ceremonial Matcha Latte</h3>
+                        <p class="menu-card-desc">Stone-milled Uji matcha whisked with oat or whole milk. Clean, vegetal, gently sweet.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-foot reveal-up">
+                <a href="#visit" class="btn btn-outline magnetic" data-cursor="cta">
+                    <span class="btn-text"><span>View Full Menu</span></span>
+                    <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ====================== FEATURED PRODUCT ====================== -->
+        <section class="featured">
+            <div class="featured-media">
+                <div class="featured-img" data-parallax="0.1" style="background-image:url('https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=2200&q=80')"></div>
+            </div>
+            <div class="featured-content">
+                <span class="eyebrow eyebrow-light reveal-up">— Signature Pour</span>
+                <h2 class="display-3 reveal-mask">
+                    <span class="line-mask"><span>One cup.</span></span>
+                    <span class="line-mask"><span><em>One morning.</em></span></span>
+                    <span class="line-mask"><span>Done right.</span></span>
+                </h2>
+                <p class="lede-light reveal-up" data-delay="0.3">
+                    Our cortadito has become a small ritual for the people of Lakeland — a quiet pause at the window, a warm cup passed hand to hand, the day started properly.
+                </p>
+                <div class="featured-meta reveal-up" data-delay="0.4">
+                    <div><span>ORIGIN</span><b>Brazilian · Ethiopian blend</b></div>
+                    <div><span>ROAST</span><b>Small batch, weekly</b></div>
+                    <div><span>SERVE</span><b>Hand-pulled, on the trailer</b></div>
+                </div>
+                <a href="#menu" class="btn btn-light magnetic" data-cursor="cta">
+                    <span class="btn-text"><span>Discover the menu</span></span>
+                    <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ====================== EXPERIENCE ====================== -->
+        <section class="experience" id="story">
+            <div class="experience-inner">
+                <div class="experience-head">
+                    <span class="eyebrow reveal-up">— The Greca Moment</span>
+                    <h2 class="display-2 reveal-mask">
+                        <span class="line-mask"><span>Slow mornings.</span></span>
+                        <span class="line-mask"><span>Good coffee.</span></span>
+                        <span class="line-mask"><span><em>Fresh pastry.</em></span></span>
+                    </h2>
+                </div>
+
+                <div class="experience-collage">
+                    <figure class="exp-img exp-img-1 reveal-up" data-parallax="0.18">
+                        <div class="exp-img-inner" style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80')"></div>
+                    </figure>
+                    <figure class="exp-img exp-img-2 reveal-up" data-delay="0.1" data-parallax="0.12">
+                        <div class="exp-img-inner" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80')"></div>
+                    </figure>
+                    <figure class="exp-img exp-img-3 reveal-up" data-delay="0.2" data-parallax="0.22">
+                        <div class="exp-img-inner" style="background-image:url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80')"></div>
+                    </figure>
+                    <figure class="exp-img exp-img-4 reveal-up" data-delay="0.3" data-parallax="0.15">
+                        <div class="exp-img-inner" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80')"></div>
+                    </figure>
+                </div>
+
+                <div class="experience-text">
+                    <p class="reveal-up" data-delay="0.2">
+                        Step up to the hatch. Order something warm. Stay a minute, stay an hour — the trailer may move, but the welcome stays the same. Greca is built for the in-between moments: a meeting before work, a break on a Saturday walk, a quick espresso on the way home.
+                    </p>
+                    <a href="#visit" class="link-arrow magnetic reveal-up" data-delay="0.3" data-cursor="cta">
+                        <span>Plan your visit</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== GALLERY ====================== -->
+        <section class="gallery" id="gallery">
+            <div class="section-head section-head-dark">
+                <div>
+                    <span class="eyebrow eyebrow-light">— The Gallery</span>
+                    <h2 class="display-2">A <em>visual</em> diary<br/>of the trailer.</h2>
+                </div>
+                <a href="https://www.instagram.com/grecacoffeenpastry/" target="_blank" class="btn btn-ghost-light magnetic" data-cursor="cta">
+                    <span class="btn-text"><span>Follow on Instagram</span></span>
+                    <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                </a>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gal gal-1" data-cursor="view" data-parallax="0.1">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1600&q=80')"></div>
+                    <figcaption><span>01</span> · The Cortadito</figcaption>
+                </figure>
+                <figure class="gal gal-2" data-cursor="view" data-parallax="0.16">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80')"></div>
+                    <figcaption><span>02</span> · Pastry Case</figcaption>
+                </figure>
+                <figure class="gal gal-3" data-cursor="view" data-parallax="0.08">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1400&q=80')"></div>
+                    <figcaption><span>03</span> · Latte Art</figcaption>
+                </figure>
+                <figure class="gal gal-4" data-cursor="view" data-parallax="0.2">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1400&q=80')"></div>
+                    <figcaption><span>04</span> · On The Counter</figcaption>
+                </figure>
+                <figure class="gal gal-5" data-cursor="view" data-parallax="0.12">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1518057111178-44a106bad636?auto=format&fit=crop&w=1600&q=80')"></div>
+                    <figcaption><span>05</span> · The Trailer</figcaption>
+                </figure>
+                <figure class="gal gal-6" data-cursor="view" data-parallax="0.16">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1200&q=80')"></div>
+                    <figcaption><span>06</span> · Morning Light</figcaption>
+                </figure>
+                <figure class="gal gal-7" data-cursor="view" data-parallax="0.1">
+                    <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1463797221720-6b07e6426c24?auto=format&fit=crop&w=1200&q=80')"></div>
+                    <figcaption><span>07</span> · Tres Leches</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ====================== REVIEWS ====================== -->
+        <section class="reviews">
+            <div class="reviews-inner">
+                <div class="reviews-head reveal-up">
+                    <span class="eyebrow">— What People Say</span>
+                    <h2 class="display-2">Pull up.<br/><em>Stay a while.</em></h2>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review reveal-up" data-delay="0.1">
+                        <div class="review-mark">"</div>
+                        <p>Walking up to the Greca trailer is the best part of my Tuesday morning. The pistachio tres leches is genuinely the best dessert in Lakeland — I'd drive across town for it.</p>
+                        <footer><b>Hannah M.</b><span>Local regular</span></footer>
+                    </article>
+                    <article class="review reveal-up" data-delay="0.2">
+                        <div class="review-mark">"</div>
+                        <p>The coffee is pulled with real care. You can taste it. And the matcha is on another level. Feels like a tiny corner of the Mediterranean in the middle of Florida.</p>
+                        <footer><b>Jordan A.</b><span>Lakeland, FL</span></footer>
+                    </article>
+                    <article class="review reveal-up" data-delay="0.3">
+                        <div class="review-mark">"</div>
+                        <p>The almond croissant is unreal — flaky, buttery, perfectly sweet. It's the kind of place where every detail has been thought about. Highly recommend.</p>
+                        <footer><b>Elena R.</b><span>Munchies on Marcum</span></footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== LOCATION / VISIT ====================== -->
+        <section class="visit" id="visit">
+            <div class="visit-grid">
+                <div class="visit-media">
+                    <div class="visit-img" data-parallax="0.12" style="background-image:url('https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1800&q=80')"></div>
+                    <div class="visit-pin">
+                        <span class="pin-dot"></span>
+                        <div>
+                            <b>Munchies on Marcum</b>
+                            <span>1379 Marcum Rd · Lakeland, FL 33809</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visit-info">
+                    <span class="eyebrow reveal-up">— Visit Greca</span>
+                    <h2 class="display-2 reveal-mask">
+                        <span class="line-mask"><span>Find the trailer.</span></span>
+                        <span class="line-mask"><span><em>Find your break.</em></span></span>
+                    </h2>
+
+                    <div class="visit-cards">
+                        <div class="visit-card reveal-up" data-delay="0.1">
+                            <span class="vc-label">Hours</span>
+                            <ul>
+                                <li><span>Tuesday – Friday</span><b>7:00 am – 3:00 pm</b></li>
+                                <li><span>Saturday</span><b>11:00 am – 6:00 pm</b></li>
+                                <li class="muted"><span>Sunday – Monday</span><b>Closed</b></li>
+                            </ul>
+                        </div>
+
+                        <div class="visit-card reveal-up" data-delay="0.2">
+                            <span class="vc-label">Contact</span>
+                            <ul>
+                                <li><span>Instagram</span><b>@grecacoffeenpastry</b></li>
+                                <li><span>Address</span><b>1379 Marcum Rd, Lakeland FL</b></li>
+                                <li><span>Updates</span><b>DM for catering & pop-ups</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="visit-cta reveal-up" data-delay="0.3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=1379+Marcum+Rd+Lakeland+FL+33809" target="_blank" class="btn btn-primary magnetic" data-cursor="cta">
+                            <span class="btn-text"><span>Get Directions</span></span>
+                            <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                        </a>
+                        <a href="https://www.instagram.com/grecacoffeenpastry/" target="_blank" class="btn btn-ghost magnetic" data-cursor="cta">
+                            <span class="btn-text"><span>Follow on Instagram</span></span>
+                            <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== FINAL CTA ====================== -->
+        <section class="final">
+            <div class="final-bg" style="background-image:url('https://images.unsplash.com/photo-1442975631115-c4f7b05b8a2c?auto=format&fit=crop&w=2400&q=80')"></div>
+            <div class="final-grain"></div>
+            <div class="final-overlay"></div>
+            <div class="final-content">
+                <span class="eyebrow eyebrow-light reveal-up">— One Last Thing</span>
+                <h2 class="display-final reveal-mask">
+                    <span class="line-mask"><span>Your next coffee break</span></span>
+                    <span class="line-mask"><span><em>starts here.</em></span></span>
+                </h2>
+                <a href="#visit" class="btn btn-light magnetic reveal-up" data-delay="0.2" data-cursor="cta">
+                    <span class="btn-text"><span>Visit Greca</span></span>
+                    <span class="btn-arrow"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ====================== FOOTER ====================== -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo" data-cursor="link">
+                        <span class="logo-mark">G</span>
+                        <span class="logo-word">Greca</span>
+                    </a>
+                    <p>An artisan coffee & pastry trailer. Mediterranean warmth, Florida sunshine, and a serious commitment to a great cup.</p>
+                </div>
+
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <span class="fc-title">Visit</span>
+                        <ul>
+                            <li>1379 Marcum Rd</li>
+                            <li>Lakeland, FL 33809</li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=1379+Marcum+Rd+Lakeland+FL+33809" target="_blank" data-cursor="link">Get directions ↗</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <span class="fc-title">Hours</span>
+                        <ul>
+                            <li>Tue – Fri <b>7 – 3</b></li>
+                            <li>Saturday <b>11 – 6</b></li>
+                            <li>Sun – Mon <b>Closed</b></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <span class="fc-title">Discover</span>
+                        <ul>
+                            <li><a href="#menu" data-cursor="link">Menu</a></li>
+                            <li><a href="#story" data-cursor="link">About</a></li>
+                            <li><a href="#gallery" data-cursor="link">Gallery</a></li>
+                            <li><a href="https://www.instagram.com/grecacoffeenpastry/" target="_blank" data-cursor="link">Instagram ↗</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <span class="fc-title">Contact</span>
+                        <ul>
+                            <li><a href="https://www.instagram.com/grecacoffeenpastry/" target="_blank" data-cursor="link">@grecacoffeenpastry</a></li>
+                            <li>DM for catering</li>
+                            <li>DM for pop-ups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Greca Coffee N Pastry · Lakeland, FL</span>
+                <span class="footer-mark">Crafted with care · <em>Made in Florida</em></span>
+            </div>
+        </footer>
+
+    </main>
+
+    <script defer src="assets/js/main.js"></script>
+</body>
+</html>
